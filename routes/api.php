@@ -25,6 +25,10 @@ Route::get('/news', [NewsController::class, 'index']);
 Route::post('/news', [NewsController::class, 'store']);
 Route::put('/news/{id}', [NewsController::class, 'update']);
 Route::delete('/news/{id}', [NewsController::class, 'destroy']);
+Route::get('/news/search/{title}', [NewsController::class, 'search']);
+Route::get('/news/category/sport', [NewsController::class, 'sport']);
+Route::get('/news/category/finance', [NewsController::class, 'finance']);
+Route::get('/news/category/aoutomotive', [NewsController::class, 'automotive']);
 
 # Route news
 # Method GET
